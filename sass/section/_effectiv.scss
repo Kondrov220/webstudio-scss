@@ -1,0 +1,130 @@
+.effective {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(./img/team.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .effective-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .effective-box {
+    width: 696px;
+    height: 120px;
+  }
+  
+  .effective-info {
+    padding-top: 94px;
+    padding-bottom: 118px;
+  }
+  
+  .effective-title {
+    color: var(--title-color);
+    text-align: center;
+    font-size: 44px;
+    font-weight: 900;
+    line-height: 1.36;
+    letter-spacing: 2.64px;
+    text-transform: uppercase;
+  }
+  
+  .effective-button {
+    color: var(--title-color);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.87;
+    letter-spacing: 0.96px;
+    background-color: var(--acxent-color);
+    border-radius: 4px;
+    width: 216px;
+    height: 50px;
+    margin-top: 30px;
+  }
+  
+  .effective-list {
+    display: flex;
+    gap: 30px;
+  }
+  
+  .effective-item {
+    width: 270px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .effective-item:nth-child(1)::before {
+    content: " ";
+    margin-bottom: 30px;
+    border-radius: 4px;
+    background: #f5f4fa;
+    width: 270px;
+    height: 120px;
+    background-image: url(./img/antenna.png);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+  }
+  
+  .effective-item:nth-child(2)::before {
+    content: " ";
+    margin-bottom: 30px;
+    border-radius: 4px;
+    background: #f5f4fa;
+    width: 270px;
+    height: 120px;
+    background-image: url(./img/clock.png);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+  }
+  
+  .effective-item:nth-child(3)::before {
+    content: " ";
+    margin-bottom: 30px;
+    border-radius: 4px;
+    background: #f5f4fa;
+    width: 270px;
+    height: 120px;
+    background-image: url(./img/diagram.png);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+  }
+  
+  .effective-item:nth-child(4)::before {
+    content: " ";
+    margin-bottom: 30px;
+    border-radius: 4px;
+    background: #f5f4fa;
+    width: 270px;
+    height: 120px;
+    background-image: url(./img/astronaut.png);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+  }
+  
+  .effective-subtitle {
+    color: var(--text-color);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.14;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  
+  .effective-text {
+    color: var(--mini-text-color);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.71;
+    letter-spacing: 0.42px;
+  }
