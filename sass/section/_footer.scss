@@ -1,5 +1,5 @@
 .footer {
-    background-color: var(--background-color-hiro);
+    background-color: $background-color-hiro;
     padding-top: 60px;
     padding-bottom: 60px;
   }
@@ -9,7 +9,7 @@
   }
   
   .footer-title {
-    color: var(--acxent-color);
+    color: $acxent-color;
     font-family: Raleway;
     font-size: 26px;
     font-weight: 700;
@@ -19,11 +19,11 @@
   }
   
   .footer-subtitle {
-    color: var(--title-color);
+    color: $title-color;
   }
   
   .footer-adres {
-    color: var(--title-color);
+    color: $title-color;
     font-size: 14px;
     font-weight: 400;
     line-height: 1.71;
@@ -38,7 +38,7 @@
   }
   
   .footer-info {
-    color: var(--footer-text-color);
+    color: $footer-text-color;
     font-size: 14px;
     font-weight: 400;
     line-height: 1.71;
@@ -49,7 +49,7 @@
     width: 20px;
     height: 20px;
     flex-shrink: 0;
-    fill: var(--title-color);
+    fill: $title-color;
   }
   
   .footer-i {
@@ -64,11 +64,11 @@
   }
   
   .footer-i:hover {
-    background-color: var(--acxent-color);
+    background-color: $acxent-color;
   }
   
   .footer-i:hover .footer-icon {
-    fill: var(--title-color);
+    fill: $title-color;
   }
   
   .footer-lists {
@@ -98,7 +98,7 @@
     width: 200px;
     height: 50px;
     border-radius: 4px;
-    background: #2196f3;
+    background: $acxent-color;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   
     color: #fff;

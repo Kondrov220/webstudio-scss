@@ -21,13 +21,13 @@
   }
   
   .portfolio-link {
-    color: var(--text-color);
+    color: $text-color;
     text-align: center;
     font-size: 16px;
     font-weight: 500;
     line-height: 1.62;
     letter-spacing: 0.48px;
-    background: #f5f4fa;
+    background: $background-color-team;
     height: 38px;
     padding: 6px 22px;
     border-radius: 4px;
@@ -39,14 +39,14 @@
   
   
   .portfolio-link:hover {
-    background-color: var(--acxent-color);
-    color: var(--title-color);
+    background-color: $acxent-color;
+    color: $title-color;
   }
   
   
   .portfolio-link:focus {
-    background-color: var(--acxent-color);
-    color: var(--title-color);
+    background-color: $acxent-color;
+    color: $title-color;
   }
   
   .portfolio-list {
@@ -59,7 +59,7 @@
     width: 370px;
     height: 404px;
     flex-basis: calc((100% - 60px) / 3);
-    border: 1px solid #eee;
+    border: 1px solid $gray-color;
     position: relative;
     /* overflow: hidden; */
   }
@@ -72,7 +72,7 @@
   .overlay {
     width: 370px;
   height: 294px;
-  background: rgba(33, 150, 243, 0.90);
+  background: rgba(33, 150, 243, 0.9);
   position: absolute;
   right: 0;
   top: 404px;
@@ -89,7 +89,7 @@
   
   .overlay-text {
     width: 322px;
-    color: #FFF;
+    color: $title-color;
   font-family: Roboto;
   font-size: 18px;
   font-style: normal;
@@ -112,7 +112,7 @@
   }
   
   .portfolio-name {
-    color: var(--text-color);
+    color: $text-color;
     font-size: 18px;
     font-weight: 700;
     line-height: 2;
@@ -126,7 +126,7 @@
   }
   
   .portfolio-info {
-    color: var(--mini-text-color);
+    color: $mini-text-color;
     font-size: 16px;
     font-weight: 400;
     line-height: 1.87;

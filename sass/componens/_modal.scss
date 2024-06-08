@@ -30,7 +30,7 @@
     width: 528px;
     height: 581px;
     border-radius: 4px;
-    background: #fff;
+    background: $title-color;
     box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12),
       0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
   
@@ -49,7 +49,7 @@
     height: 30px;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50px;
-    background: #fff;
+    background: $title-color;
     position: absolute;
     right: 8px;
     top: 8px;
@@ -57,7 +57,7 @@
   
   .mod-title {
     margin-bottom: 2px;
-    color: #212121;
+    color: $text-color;
     text-align: center;
     font-family: Roboto;
     font-size: 20px;
@@ -74,7 +74,7 @@
   
   .mod-text {
     width: 41px;
-    color: #757575;
+    color: $mini-text-color;
     font-family: Roboto;
     font-size: 12px;
     font-style: normal;
@@ -97,11 +97,11 @@
   }
   
   .mod-item:hover .mod-input{
-    border: 1px solid #2196F3;
+    border: 1px solid $acxent-color;
   }
   
   .mod-item:hover .mod-icon{
-    fill: #2196F3;
+    fill: $acxent-color;
   }
   
   .mod-icon {
@@ -126,11 +126,11 @@
   }
   
   .mod-inpute:hover {
-    border: 1px solid #2196F3;
+    border: 1px solid $acxent-color;
   }
   
   .mod-link {
-    color: #2196f3;
+    color: $acxent-color;
     text-decoration-line: underline;
   }
   
@@ -142,7 +142,7 @@
     margin-right: 10px;
     width: 16px;
     height: 15px;
-    border: 1px solid #212121;
+    border: 1px solid $text-color;
   }
   
   .mod-button {
@@ -150,9 +150,9 @@
     width: 200px;
     height: 50px;
     border-radius: 4px;
-    background: #2196f3;
+    background: $acxent-color;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    color: #fff;
+    color: $title-color;
     text-align: center;
     font-family: Roboto;
     font-size: 16px;
