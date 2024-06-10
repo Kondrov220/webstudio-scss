@@ -1,5 +1,93 @@
 .portfolio {
     padding-bottom: 94px;
+    
+    &__items {
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+    }
+    
+    &__link {
+      color: $text-color;
+      text-align: center;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 1.62;
+      letter-spacing: 0.48px;
+      background: $background-color-team;
+      height: 38px;
+      padding: 6px 22px;
+      border-radius: 4px;
+      transition-property:color,background-color;
+      transition-duration:250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
+    }
+    
+    
+    &__link:hover {
+      background-color: $acxent-color;
+      color: $title-color;
+    }
+    
+    
+    &__link:focus {
+      background-color: $acxent-color;
+      color: $title-color;
+    }
+    
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+    
+    &__item {
+      width: 370px;
+      height: 404px;
+      flex-basis: calc((100% - 60px) / 3);
+      border: 1px solid $gray-color;
+      position: relative;
+      /* overflow: hidden; */
+    }
+    
+    &__item:hover .overlay{
+    opacity: 1;
+    transform: translate(0px, -404px);
+    }
+    
+    
+    &__item:hover {
+      box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
+        0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+    }
+    
+    &__photo {
+      width: 370px;
+      height: 294px;
+    }
+    
+    &__name {
+      color: $text-color;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 2;
+      letter-spacing: 1.08px;
+    }
+    
+    &__box {
+      padding-top: 20px;
+      padding-left: 24px;
+      padding-right: 24px;
+    }
+    
+    &__info {
+      color: $mini-text-color;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 1.87;
+      letter-spacing: 0.48px;
+    }
   }
   
   .links {
@@ -11,64 +99,7 @@
     animation-direction:reverse;
   }
   
-  
-  
-  
-  .portfolio-items {
-    display: flex;
-    justify-content: center;
-    gap: 8px;
-  }
-  
-  .portfolio-link {
-    color: $text-color;
-    text-align: center;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1.62;
-    letter-spacing: 0.48px;
-    background: $background-color-team;
-    height: 38px;
-    padding: 6px 22px;
-    border-radius: 4px;
-    transition-property:color,background-color;
-    transition-duration:250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  
-  }
-  
-  
-  .portfolio-link:hover {
-    background-color: $acxent-color;
-    color: $title-color;
-  }
-  
-  
-  .portfolio-link:focus {
-    background-color: $acxent-color;
-    color: $title-color;
-  }
-  
-  .portfolio-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-  }
-  
-  .portfolio-item {
-    width: 370px;
-    height: 404px;
-    flex-basis: calc((100% - 60px) / 3);
-    border: 1px solid $gray-color;
-    position: relative;
-    /* overflow: hidden; */
-  }
-  
-  .portfolio-item:hover .overlay{
-  opacity: 1;
-  transform: translate(0px, -404px);
-  }
-  
+
   .overlay {
     width: 370px;
   height: 294px;
@@ -99,36 +130,4 @@
   transition-property:box-shadow;
   transition-duration:250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  
-  .portfolio-item:hover {
-    box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
-      0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
-  }
-  
-  .portfolio-photo {
-    width: 370px;
-    height: 294px;
-  }
-  
-  .portfolio-name {
-    color: $text-color;
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 2;
-    letter-spacing: 1.08px;
-  }
-  
-  .portfolio-box {
-    padding-top: 20px;
-    padding-left: 24px;
-    padding-right: 24px;
-  }
-  
-  .portfolio-info {
-    color: $mini-text-color;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.87;
-    letter-spacing: 0.48px;
   }

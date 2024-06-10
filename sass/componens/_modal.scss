@@ -34,133 +34,136 @@
     box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12),
       0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
   
+
+      &__icone {
+        width: 18px;
+        height: 18px;
+      }
+      
+      &__border {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30px;
+        height: 30px;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 50px;
+        background: $title-color;
+        position: absolute;
+        right: 8px;
+        top: 8px;
+      }
+      
+      &__title {
+        margin-bottom: 2px;
+        color: $text-color;
+        text-align: center;
+        font-family: Roboto;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 0.6px;
+        width: 448px;
+      }
+      
+      &__item {
+        position: relative;
+      }
+      
+      &__text {
+        width: 41px;
+        color: $mini-text-color;
+        font-family: Roboto;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.12px;
+        margin-top: 10px;
+        margin-bottom: 4px;
+      }
+      
+      &__input {
+        width: 448px;
+        height: 40px;
+        border-radius: 4px;
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        padding-left: 42px;
+        transition-property:border;
+        transition-duration:250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      }
+      
+      &__item:hover &__input{
+        border: 1px solid $acxent-color;
+      }
+      
+      &__item:hover &__icon{
+        fill: $acxent-color;
+      }
+      
+      &__icon {
+        width: 18px;
+      height: 18px;
+        position: absolute;
+        left: 12px;
+        top: 29px;
+        bottom: 11px;
+      }
+      
+      &__inpute {
+        padding: 12px 16px  94px;
+        width: 448px;
+        height: 120px;
+        border-radius: 4px;
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        margin-bottom: 20px;
+        transition-property:border;
+        transition-duration:250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      }
+      
+      &__inpute:hover {
+        border: 1px solid $acxent-color;
+      }
+      
+      &__link {
+        color: $acxent-color;
+        text-decoration-line: underline;
+      }
+      
+      &__boxe {
+        display: flex;
+      }
+      
+      &__box{
+        margin-right: 10px;
+        width: 16px;
+        height: 15px;
+        border: 1px solid $text-color;
+      }
+      
+      &__button {
+        margin-top: 30px;
+        width: 200px;
+        height: 50px;
+        border-radius: 4px;
+        background: $acxent-color;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+        color: $title-color;
+        text-align: center;
+        font-family: Roboto;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 30px; /* 187.5% */
+        letter-spacing: 0.96px;
+      }
+      
+
   }
   
-  .mod-icone {
-    width: 18px;
-    height: 18px;
-  }
-  
-  .mod-border {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 30px;
-    height: 30px;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: 50px;
-    background: $title-color;
-    position: absolute;
-    right: 8px;
-    top: 8px;
-  }
-  
-  .mod-title {
-    margin-bottom: 2px;
-    color: $text-color;
-    text-align: center;
-    font-family: Roboto;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 0.6px;
-    width: 448px;
-  }
-  
-  .mod-item {
-    position: relative;
-  }
-  
-  .mod-text {
-    width: 41px;
-    color: $mini-text-color;
-    font-family: Roboto;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: 0.12px;
-    margin-top: 10px;
-    margin-bottom: 4px;
-  }
-  
-  .mod-input {
-    width: 448px;
-    height: 40px;
-    border-radius: 4px;
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    padding-left: 42px;
-    transition-property:border;
-    transition-duration:250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  
-  .mod-item:hover .mod-input{
-    border: 1px solid $acxent-color;
-  }
-  
-  .mod-item:hover .mod-icon{
-    fill: $acxent-color;
-  }
-  
-  .mod-icon {
-    width: 18px;
-  height: 18px;
-    position: absolute;
-    left: 12px;
-    top: 29px;
-    bottom: 11px;
-  }
-  
-  .mod-inpute {
-    padding: 12px 16px  94px;
-    width: 448px;
-    height: 120px;
-    border-radius: 4px;
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    margin-bottom: 20px;
-    transition-property:border;
-    transition-duration:250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  
-  .mod-inpute:hover {
-    border: 1px solid $acxent-color;
-  }
-  
-  .mod-link {
-    color: $acxent-color;
-    text-decoration-line: underline;
-  }
-  
-  .mod-boxe {
-    display: flex;
-  }
-  
-  .mod-box{
-    margin-right: 10px;
-    width: 16px;
-    height: 15px;
-    border: 1px solid $text-color;
-  }
-  
-  .mod-button {
-    margin-top: 30px;
-    width: 200px;
-    height: 50px;
-    border-radius: 4px;
-    background: $acxent-color;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    color: $title-color;
-    text-align: center;
-    font-family: Roboto;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 30px; /* 187.5% */
-    letter-spacing: 0.96px;
-  }
   
   .no-scroll {
     overflow: hidden;
