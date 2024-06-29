@@ -5,25 +5,17 @@
 
 
     &__container {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
+      @include flex ($items, center, column, $gap);
     }
     
     &__title {
-      color: $text-color;
-      text-align: center;
-      font-size: 36px;
-      font-weight: 700;
-      line-height: 1.16;
-      letter-spacing: 1.08px;
+        @extend %text;
+      @include text (36px, 700 , 1.16, 1.08);
       margin-bottom: 50px;
     }
     
     &__list {
-      display: flex;
-      justify-content: center;
-      gap: 30px;
+      @include flex ($items, center, $direction, 30px);
     }
     
     &__item {
@@ -40,22 +32,15 @@
     }
     
     &__name {
-      color: $text-color;
-      text-align: center;
-      font-size: 16px;
-      font-weight: 500;
-      line-height: 1, 18;
-      letter-spacing: 0.48px;
+        @extend %text;
+      @include text (16px, 500 , 1.18, 0.48);
       margin-bottom: 10px;
     }
     
     &__info {
       color: $mini-text-color;
       text-align: center;
-      font-size: 16px;
-      font-weight: 400;
-      line-height: 1.18;
-      letter-spacing: 0.48px;
+      @include text (16px, 400 , 1.18, 0.48);
     }
   
     
@@ -93,12 +78,7 @@
   }
   
   &__lists {
-    display: flex;
-    gap: 10px;
+    @include flex ($items, center, $direction, 10px);
     margin-top: 16px;
-    justify-content: center;
   }
   }
-
-  
-

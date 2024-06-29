@@ -5,8 +5,7 @@
     position: fixed;
     right: 0;
     top: 0;
-    display: flex;
-    align-items: center;
+    @include flex (center, $content, $direction, $gap);
     opacity: 1;
     transition-property: opacity, transform ;
     transition-duration:1s;
@@ -21,9 +20,7 @@
   }
   
   .mod {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+    @include flex (center $content, column, $gap);
     padding: 40px;
     position: relative;
     margin: auto;
@@ -41,9 +38,7 @@
       }
       
       &__border {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex (center, center, $direction, $gap);
         width: 30px;
         height: 30px;
         border: 1px solid rgba(0, 0, 0, 0.1);
@@ -59,11 +54,8 @@
         color: $text-color;
         text-align: center;
         font-family: Roboto;
-        font-size: 20px;
+        @include text (20px, 700 , normal, 0.6);
         font-style: normal;
-        font-weight: 700;
-        line-height: normal;
-        letter-spacing: 0.6px;
         width: 448px;
       }
       
@@ -75,11 +67,8 @@
         width: 41px;
         color: $mini-text-color;
         font-family: Roboto;
-        font-size: 12px;
+        @include text (12px, 400 , normal, 0.12);        
         font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-        letter-spacing: 0.12px;
         margin-top: 10px;
         margin-bottom: 4px;
       }
@@ -154,11 +143,8 @@
         color: $title-color;
         text-align: center;
         font-family: Roboto;
-        font-size: 16px;
+        @include text (16px, 700 , 1.87, 0.96);
         font-style: normal;
-        font-weight: 700;
-        line-height: 30px; /* 187.5% */
-        letter-spacing: 0.96px;
       }
       
 

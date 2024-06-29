@@ -9,9 +9,7 @@
 
 
     &__container {
-      display: flex;
-      align-items: center;
-      flex-direction: column;
+      @include flex (center $content, column, $gap);
     }
     
     &__box {
@@ -27,20 +25,14 @@
     &__title {
       color: $title-color;
       text-align: center;
-      font-size: 44px;
-      font-weight: 900;
-      line-height: 1.36;
-      letter-spacing: 2.64px;
+      @include text (44px, 900 , 1.36, 2.64);
       text-transform: uppercase;
     }
     
     &__button {
       color:$title-color;
       text-align: center;
-      font-size: 16px;
-      font-weight: 700;
-      line-height: 1.87;
-      letter-spacing: 0.96px;
+      @include text (16px, 700 , 1.87, 0.96);
       background-color: $acxent-color;
       border-radius: 4px;
       width: 216px;
@@ -49,14 +41,12 @@
     }
     
     &__list {
-      display: flex;
-      gap: 30px;
+      @include flex ($items, $content, $direction, 30px);
     }
     
     &__item {
       width: 270px;
-      display: flex;
-      flex-direction: column;
+      @include flex ($items, $content, column, $gap);
     }
     
     &__item:nth-child(1)::before {
@@ -109,20 +99,14 @@
     
     &__subtitle {
       color: $text-color;
-      font-size: 14px;
-      font-weight: 700;
-      line-height: 1.14;
-      letter-spacing: 0.42px;
+      @include text (14px, 700 , 1.14, 0.42);
       text-transform: uppercase;
       margin-bottom: 10px;
     }
     
     &__text {
       color: $mini-text-color;
-      font-size: 14px;
-      font-weight: 400;
-      line-height: 1.71;
-      letter-spacing: 0.42px;
+      @include text (14px, 400 , 1.71, 0.42);
     }
   }
   

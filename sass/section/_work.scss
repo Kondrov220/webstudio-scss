@@ -4,12 +4,8 @@
 
 
     &__title {
-      color: $text-color;
-      text-align: center;
-      font-size: 36px;
-      font-weight: 700;
-      line-height: 1.16;
-      letter-spacing: 1.08px;
+      @extend %text;
+      @include text (36px, 700 , 1.16, 1.08);
       margin-bottom: 50px;
     }
     
@@ -18,14 +14,11 @@
     }
     
     &__cotainer {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+      @include flex (center, $content, column, $gap);
     }
     
     &__list {
-      display: flex;
-      gap: 30px;
+      @include flex ($items, $content, $direction, 30px);
     }
     
     &__bg {
@@ -46,11 +39,8 @@
       color: #fff;
     
       font-family: Roboto;
-      font-size: 14px;
+      @include text (14px, 700 , normal, 0.42);
       font-style: normal;
-      font-weight: 700;
-      line-height: normal;
-      letter-spacing: 0.42px;
       text-transform: uppercase;
     }
   }

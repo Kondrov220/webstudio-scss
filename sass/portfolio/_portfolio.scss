@@ -2,18 +2,12 @@
     padding-bottom: 94px;
     
     &__items {
-      display: flex;
-      justify-content: center;
-      gap: 8px;
+      @include flex ($items, center, $direction, 8px);
     }
     
     &__link {
-      color: $text-color;
-      text-align: center;
-      font-size: 16px;
-      font-weight: 500;
-      line-height: 1.62;
-      letter-spacing: 0.48px;
+      @extend %text;
+      @include text (16px, 500 , 1.62, 0.48);
       background: $background-color-team;
       height: 38px;
       padding: 6px 22px;
@@ -37,9 +31,7 @@
     }
     
     &__list {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 30px;
+      @include flex ($items, $content, wrap, 30px);
     }
     
     &__item {
@@ -58,14 +50,12 @@
     }
 
     &__overflow {
-      width: 370px;
-      height: 294px;
+      @extend %size;
       overflow: hidden;
     }
     
     &__photo {
-      width: 370px;
-      height: 294px;
+      @extend %size;
     }
 
     &__overflow:hover  .overlay{
@@ -75,10 +65,7 @@
     
     &__name {
       color: $text-color;
-      font-size: 18px;
-      font-weight: 700;
-      line-height: 2;
-      letter-spacing: 1.08px;
+      @include text (18px, 700 , 2, 1.08);
     }
     
     &__box {
@@ -89,10 +76,7 @@
     
     &__info {
       color: $mini-text-color;
-      font-size: 16px;
-      font-weight: 400;
-      line-height: 1.87;
-      letter-spacing: 0.48px;
+      @include text (16px, 400 , 1.87, 0.48);
     }
   }
   
@@ -107,15 +91,12 @@
   
 
   .overlay {
-    width: 370px;
-  height: 294px;
+  @extend %size;
   background: rgba(33, 150, 243, 0.9);
   position: absolute;
   right: 0;
   top: 404px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex (center, center $direction, $gap);
   opacity: 0;
   transition-property:transform,opacity;
   transition-duration:250ms,500ms;
@@ -128,11 +109,8 @@
     width: 322px;
     color: $title-color;
   font-family: Roboto;
-  font-size: 18px;
+  @include text (18px, 400 , 1.55, 0.54);
   font-style: normal;
-  font-weight: 400;
-  line-height: 28px; /* 155.556% */
-  letter-spacing: 0.54px;
   transition-property:box-shadow;
   transition-duration:250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
