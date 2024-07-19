@@ -11,6 +11,11 @@
       color: $acxent-color;
       font-family: Raleway;
       @include text (26px, 700 , 1.38, none);
+      width: 134px;
+      height: 28px;
+      @media screen and (min-width: 320px){
+        color: green;
+      }
     }
     
     &__subtitel {
@@ -22,6 +27,8 @@
       margin-left: 93px;
       margin-right: 318px;
       gap: 50px;
+
+      
     }
     
     &__item {
@@ -80,6 +87,8 @@
     
     &__contacts {
       @include flex ($items, $content, $direction, 30px);
+
+      
     }
     
     &__contact {
