@@ -4,6 +4,7 @@
     padding-bottom: 94px;
 
 
+
     &__container {
       @include flex ($content: center, $direction: column);
     }
@@ -15,7 +16,10 @@
     }
     
     &__list {
-      @include flex ($content: center, $gap: 30px);
+      @include flex ($content: center,$direction:column , $gap: 30px);
+      @media screen and (min-width: 1200px){
+        @include flex ($content: center,$gap: 30px);
+      }
     }
     
     &__item {

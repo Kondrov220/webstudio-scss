@@ -5,7 +5,7 @@
     letter-spacing: $spacing;
 }
 
-@mixin flex ($items: center, $content: none, $direction: wrap, $gap: 0px){
+@mixin flex ($items: center, $content: none, $direction: row, $gap: 0px){
     display: flex;
     align-items: $items;
     justify-content: $content;
