@@ -5,7 +5,7 @@
 
 
     &__container {
-      @include flex ($items, center, column, $gap);
+      @include flex ($content: center, $direction: column);
     }
     
     &__title {
@@ -15,7 +15,7 @@
     }
     
     &__list {
-      @include flex ($items, center, $direction, 30px);
+      @include flex ($content: center, $gap: 30px);
     }
     
     &__item {
@@ -78,7 +78,7 @@
   }
   
   &__lists {
-    @include flex ($items, center, $direction, 10px);
+    @include flex ($content: center, $gap: 10px);
     margin-top: 16px;
   }
   }

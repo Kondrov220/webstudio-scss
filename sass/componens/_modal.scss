@@ -5,7 +5,7 @@
     position: fixed;
     right: 0;
     top: 0;
-    @include flex (center, $content, $direction, $gap);
+    @include flex ();
     opacity: 1;
     transition-property: opacity, transform ;
     transition-duration:1s;
@@ -20,7 +20,7 @@
   }
   
   .mod {
-    @include flex (center $content, column, $gap);
+    @include flex ($direction: column);
     padding: 40px;
     position: relative;
     margin: auto;
@@ -38,7 +38,7 @@
       }
       
       &__border {
-        @include flex (center, center, $direction, $gap);
+        @include flex ($content: center);
         width: 30px;
         height: 30px;
         border: 1px solid rgba(0, 0, 0, 0.1);

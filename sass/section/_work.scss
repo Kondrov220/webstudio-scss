@@ -14,11 +14,11 @@
     }
     
     &__cotainer {
-      @include flex (center, $content, column, $gap);
+      @include flex ($direction: column);
     }
     
     &__list {
-      @include flex ($items, $content, $direction, 30px);
+      @include flex ($gap:30px);
     }
     
     &__bg {

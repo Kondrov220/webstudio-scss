@@ -5,7 +5,7 @@
     letter-spacing: $spacing;
 }
 
-@mixin flex ($items, $content, $direction, $gap){
+@mixin flex ($items: center, $content: none, $direction: wrap, $gap: 0px){
     display: flex;
     align-items: $items;
     justify-content: $content;
@@ -13,7 +13,7 @@
     gap: $gap;
 }
 
-@mixin transition ($property){
+@mixin transition ($property: color){
     transition-property:$property;
     transition-duration:250ms,500ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);

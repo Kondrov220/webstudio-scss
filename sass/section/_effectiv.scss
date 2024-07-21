@@ -9,7 +9,7 @@
 
 
     &__container {
-      @include flex (center $content, column, $gap);
+      @include flex ( $direction: column);
     }
     
     &__box {
@@ -41,12 +41,12 @@
     }
     
     &__list {
-      @include flex ($items, $content, $direction, 30px);
+      @include flex ($items: start ,$gap: 30px);
     }
     
     &__item {
       width: 270px;
-      @include flex ($items, $content, column, $gap);
+      @include flex ($items: start, $direction: column);
     }
     
     &__item:nth-child(1)::before {

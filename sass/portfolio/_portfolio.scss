@@ -2,7 +2,7 @@
     padding-bottom: 94px;
     
     &__items {
-      @include flex ($items, center, $direction, 8px);
+      @include flex ($content:center, $gap:8px);
     }
     
     &__link {
@@ -31,7 +31,7 @@
     }
     
     &__list {
-      @include flex ($items, $content, wrap, 30px);
+      @include flex ($gap: 30px);
     }
     
     &__item {
@@ -96,7 +96,7 @@
   position: absolute;
   right: 0;
   top: 404px;
-  @include flex (center, center $direction, $gap);
+  @include flex ($content: center);
   opacity: 0;
   transition-property:transform,opacity;
   transition-duration:250ms,500ms;
