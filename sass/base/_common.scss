@@ -9,6 +9,7 @@ body {
     margin: 0 auto;
     min-width: 480px;
     @media screen and (min-width: 320px){
-      width: 1200px;
+      max-width: 2000px;
+      min-width: 450px;
     }
 }
