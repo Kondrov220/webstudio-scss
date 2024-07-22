@@ -1,14 +1,16 @@
 .client {
 
   &__list {
-    width: 100%;
+    min-width: 290px;
+    max-width: 450px;
     height: 100%;
-    @include flex ($direction: center,  $gap: 30px);
+    @include flex ($wrap:wrap,  $gap: 30px,$content:center);
     padding-bottom: 94px;
+    flex-wrap: wrap;
   }
   
   &__item {
-    width: 170px;
+    flex-basis: calc((100% - 30px) / 2);
     height: 92px;
     border-radius: 4px;
     border: 1px solid $gray-cliant-color;
@@ -16,10 +18,14 @@
     transition-property:border-color;
     transition-duration:250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @media screen and (min-width: 1200px){
+      width: 170px;
+     }
   }
   
   &__icon {
     width: 106px;
+    max-width: 208px;
     height: 60px;
     fill: $gray-cliant-color;
   }
@@ -29,10 +35,14 @@
   
     text-align: center;
     font-family: Roboto;
-    @include text (36px, 700 , normal, 1.08);
+    @include text (28px, 700 , 1.16, 0.84);
     font-style: normal;
   
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+    @media screen and (min-width: 1200px){
+      margin-bottom: 50px;
+      @include text (36px, 700 , 1.16, 0.84);
+     }
   }
   
   &__item:hover {

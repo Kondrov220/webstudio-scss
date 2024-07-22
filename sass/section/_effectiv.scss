@@ -61,7 +61,8 @@
     }
     
     &__item {
-      width: 270px;
+      min-width: 270px;
+      max-width: 450px;
       @include flex ($items: center, $direction: column);
       text-align: start;
     }
