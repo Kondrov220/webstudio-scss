@@ -1,12 +1,15 @@
 .client {
 
   &__list {
-    min-width: 290px;
-    max-width: 450px;
+    width: 100%;
     height: 100%;
-    @include flex ($wrap:wrap,  $gap: 30px,$content:center);
+    @include flex (  $gap: 30px,$content:center);
     padding-bottom: 94px;
     flex-wrap: wrap;
+    @media screen and (min-width: 1200px){
+      @include flex (  $gap: 30px,$content:center);
+      flex-wrap: nowrap;
+     }
   }
   
   &__item {
@@ -20,6 +23,7 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     @media screen and (min-width: 1200px){
       width: 170px;
+
      }
   }
   
