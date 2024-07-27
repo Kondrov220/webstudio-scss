@@ -1,0 +1,46 @@
+.links {
+
+    
+
+    &__items {
+        
+        max-width: 326px;
+        min-width: 290px;
+        @include flex ($content:start, $gap:8px);
+        flex-wrap: wrap;
+        @media screen and (min-width: 1200px) {
+            width: 575px;
+            max-width: 575px;
+            @include flex ($content:center, $gap:8px);
+            flex-wrap: nowrap;
+            margin: 0 auto;
+        }
+      }
+      
+      &__link {
+        @extend %text;
+        @include text (16px, 500 , 1.62, 0.48);
+        background: $background-color-team;
+        height: 38px;
+        padding: 6px 22px;
+        border-radius: 4px;
+        transition-property:color,background-color;
+        transition-duration:250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      
+      }
+      
+      
+      &__link:hover {
+        background-color: $acxent-color;
+        color: $title-color;
+      }
+      
+      
+      &__link:focus {
+        background-color: $acxent-color;
+        color: $title-color;
+      }
+
+      
+}

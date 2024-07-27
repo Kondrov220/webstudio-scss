@@ -64,11 +64,10 @@
     
     &__i {
       padding: 12px;
-      width: 44px;
-      height: 44px;
       border-radius: 50%;
       background-color: rgba(255, 255, 255, 0.1);
       @include transition (background-color);
+      @include flex ($items:center, $content:center);
     }
     
     &__i:hover {
@@ -138,6 +137,7 @@
       margin-top: 20px;
       @include flex ($items:center, $direction: column,$gap:20px);
       @media screen and (min-width: 1200px){
+        max-width: 570px;
         @include flex ( $direction: row,$gap:12px);
        }
     }

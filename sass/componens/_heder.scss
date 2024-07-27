@@ -1,5 +1,8 @@
 .header {
     padding: 16px 0px;
+    @media screen and (min-width: 768px){
+      padding: 21px 0px;
+    }
     @media screen and (min-width: 1200px){
       padding: 24px 0px 25px  0px ;
     }
@@ -14,6 +17,9 @@
       @include text (26px, 700 , 1.38, none);
       width: 134px;
       height: 28px;
+      @media screen and (min-width: 768px){
+        @include text (24px, 700 , 1.38, 0.72);
+      }
       @media screen and (min-width: 1200px){
         width: 145px;
         height: 31px;
@@ -30,6 +36,10 @@
       @include flex($content: center);
       background-color: white;
       display: block;
+      @media screen and (min-width: 768px){
+        display: none;
+        
+      }
       @media screen and (min-width: 1200px){
        display: none;
       }
@@ -40,14 +50,19 @@
       height: 58px;
     }
     
-    &__links {
-      
-      margin-left: 93px;
-      margin-right: 318px;
-      gap: 50px;   
+    &__links {  
       display: none;
+      @media screen and (min-width: 768px){
+        display: flex;
+        margin-left: 88px;
+        margin-right: 96px;
+        gap: 50px; 
+      }
       @media screen and (min-width: 1200px){
         display: flex;
+        margin-left: 93px;
+        margin-right: 318px;
+        gap: 50px; 
        }
     }
     
@@ -59,6 +74,9 @@
       color: $text-color;
       @include text (14px, 500 , 1.14, none);
       @include transition (color);
+      @media screen and (min-width: 768px){
+        @include text (14px, 500 , 1.14, 0.28);
+      }
     }
     
     &__link:hover {
@@ -108,6 +126,9 @@
     
     &__contacts {
       display: none;
+      @media screen and (min-width: 768px){
+        @include flex ($items:start ,$direction:column ,$gap: 10px);
+      }
       @media screen and (min-width: 1200px){
         @include flex ($gap: 30px);
        }
@@ -118,6 +139,9 @@
       color: $mini-text-color;
       @include text (14px, 500 , 1.14, 0.28);
       @include transition (color);
+      @media screen and (min-width: 768px){
+        @include text (12px, 500 , 1.14, 0.24);
+      }
     }
     
     &__contacte:hover &__contact {
@@ -147,6 +171,9 @@
     &__contacte {
       @include flex ($gap:10px);
       @include transition ();
+      @media screen and (min-width: 768px){
+        @include flex ($gap:8px);
+      }
     }
     
     &__line {
@@ -162,6 +189,10 @@
     flex-shrink: 0;
     fill: $mini-text-color;
     @include transition (fill);
+    @media screen and (min-width: 768px){
+      width: 14px;
+      height: 10px;
+    }
   }
   
   .smartphone {
@@ -170,4 +201,8 @@
     flex-shrink: 0;
     fill: $mini-text-color;
     @include transition (fill);
+    @media screen and (min-width: 768px){
+      width: 10px;
+      height: 14px;
+    }
   }
