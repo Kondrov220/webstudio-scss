@@ -15,8 +15,13 @@
     
     &__container {
       @include flex ($direction: column);
+      @media screen and (min-width: 768px){
+        @include flex ($direction: row, $content:center, $items:start);
+        flex-wrap: wrap;
+      }
       @media screen and (min-width: 1200px){
         @include flex ($direction: row, $items:start);
+        flex-wrap: nowrap;
        }
     }
     
@@ -38,6 +43,9 @@
       color: $title-color;
       @include text (14px, 400 , 1.71, 0.42);
       margin-bottom: 8px;
+      @media screen and (min-width: 768px){
+        width: 232px;
+      }
       @media screen and (min-width: 1200px){
         margin-bottom: 9px;
        }
@@ -88,6 +96,9 @@
       height: 80px;
       margin-top: 60px;
       @include flex ($direction: column);
+      @media screen and (min-width: 768px){
+        margin-top: 0px;
+      }
       @media screen and (min-width: 1200px){
         @include flex ($direction: column, $items:start);
         margin-top: 0px;
@@ -98,8 +109,12 @@
     
     &__box1 {
       @include flex ($items:center, $direction: column);
+      @media screen and (min-width: 768px){
+        margin-right: 165px;
+      }
       @media screen and (min-width: 1200px){
         @include flex ($items:start, $direction: column);
+        margin-right: 0px;
        }
     }
   
@@ -126,6 +141,9 @@
       background: rgba(33, 150, 243, 0.00);
       box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
       padding-left: 16px;
+      @media screen and (min-width: 768px){
+        width: 450px;
+      }
       @media screen and (min-width: 1200px){
         width: 358px;
        }

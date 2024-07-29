@@ -22,7 +22,7 @@
         <h2 class="header__titel">
           Web<span class="header__subtitel">Studio</span>
         </h2>
-        <button class="header__menu" type="button">
+        <button class="header__menu btn-open" type="button" data-menu-open>
           <svg class="header__icon">
           <use href="./img/symbol-defs.svg#icon-menu"></use>
         </svg>
@@ -327,5 +327,34 @@
         </div>
       </div>
     </footer>
+    <div data-menu class="menu__boxx hidden">
+      <div class="menu ">
+        <button class="menu__button" type="button" data-menu-close>
+          <svg class="menu__icon">
+          <use href="./img/symbol-defs.svg#icon-cross"></use>
+        </svg>
+        </button>
+        <ul class="menu__links">
+          <li class="menu__item"><a class="menu__link" href="./index.html">Студія</a></li>
+          <li class="menu__item"><a class="menu__link menu__activ" href="./portfolio.html">Портфоліо</a></li>
+          <li class="menu__item"><a class="menu__link" href="">Контакти</a></li>
+        </ul>
+        <div class="menu__boxe">
+          <a class="menu__contact" href="tel:+380961111111">+38 096 111 11 11</a>
+          <a class="menu__contacte" href="mailto:info@devstudio.com">info@devstudio.com</a>
+        </div>
+  
+        
+        <ul class="menu__box">
+          <li class="menu__items"><a class="menu__linke" href="">Instagram</a></li>
+          <li class="menu__items"><a class="menu__linke" href="">Twitter</a></li>
+          <li class="menu__items"><a class="menu__linke" href="">Facebook</a></li>
+          <li class="menu__items"><a class="menu__linke" href="">LinkedIn</a></li>
+        </ul>
+        
+      </div>
+      </div>
   </body>
+  <script src="./js/menu.js"></script>
+  
 </html>

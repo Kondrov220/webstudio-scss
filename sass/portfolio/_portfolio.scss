@@ -12,6 +12,9 @@
     &__list {
       @include flex ($content:center ,$gap: 30px);
       flex-wrap: wrap;
+      @media screen and (min-width: 768px){
+        @include flex ($content:start,$gap: 30px);
+      }
     }
     
     &__item {
@@ -22,6 +25,9 @@
       border: 1px solid $gray-color;
       position: relative;
       overflow: hidden;
+      @media screen and (min-width: 768px){
+        flex-basis: calc((100% - 30px) / 2);
+      }
       @media screen and (min-width: 1200px){
         flex-basis: calc((100% - 60px) / 3);
         width: 370px;

@@ -8,6 +8,13 @@
         min-width: 290px;
         @include flex ($content:start, $gap:8px);
         flex-wrap: wrap;
+        @media screen and (min-width: 768px){
+          width: 575px;
+          max-width: 575px;
+          @include flex ($content:center, $gap:8px);
+          flex-wrap: nowrap;
+          margin: 0 auto;
+        }
         @media screen and (min-width: 1200px) {
             width: 575px;
             max-width: 575px;
