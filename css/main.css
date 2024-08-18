@@ -30,6 +30,12 @@ body {
   font-family: Roboto;
 }
 
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 .container {
   /* outline: solid red; */
   padding-left: 15px;
